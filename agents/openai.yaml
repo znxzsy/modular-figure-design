@@ -1,0 +1,4 @@
+interface:
+  display_name: "CVPR 模块化论文图"
+  short_description: "严谨科研方法图：先规划叙事，再分模块制作、统一合版与连线验收"
+  default_prompt: "使用 $modular-figure-design，将我的研究方法先规划成严谨的图稿，再分模块生成并合成一张 CVPR 风格论文方法图，不使用卡通人物。"

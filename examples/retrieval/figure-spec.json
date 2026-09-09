@@ -1,0 +1,74 @@
+{
+  "claim": "Retrieved passages join the query before answer generation.",
+  "canvas": {
+    "width": 1500,
+    "height": 480
+  },
+  "status": "illustrative method schematic; no experimental results",
+  "modules": [
+    {
+      "id": "query",
+      "action": "Query",
+      "input": "Which passage supports X?",
+      "output": "see edge payloads",
+      "visual": "original editable geometry"
+    },
+    {
+      "id": "retrieve",
+      "action": "Retrieve",
+      "input": "Select relevant passages",
+      "output": "see edge payloads",
+      "visual": "original editable geometry"
+    },
+    {
+      "id": "generate",
+      "action": "Generate",
+      "input": "Query + retrieved context",
+      "output": "see edge payloads",
+      "visual": "original editable geometry"
+    },
+    {
+      "id": "answer",
+      "action": "Answer",
+      "input": "Response with references",
+      "output": "see edge payloads",
+      "visual": "original editable geometry"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "from": "#e0-out",
+      "to": "#e0-in",
+      "payload": "query",
+      "kind": "data"
+    },
+    {
+      "id": "e1",
+      "from": "#e1-out",
+      "to": "#e1-in",
+      "payload": "passages",
+      "kind": "data"
+    },
+    {
+      "id": "e2",
+      "from": "#e2-out",
+      "to": "#e2-in",
+      "payload": "answer",
+      "kind": "data"
+    },
+    {
+      "id": "e3",
+      "from": "#e3-out",
+      "to": "#e3-in",
+      "payload": "query bypass",
+      "kind": "data"
+    }
+  ],
+  "assets": [
+    {
+      "source": "original SVG geometry",
+      "status": "illustrative"
+    }
+  ]
+}

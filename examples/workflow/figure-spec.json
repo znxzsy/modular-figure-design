@@ -1,0 +1,53 @@
+{
+  "claim": "A semantic contract guides modular assets, composition and review.",
+  "canvas": {
+    "width": 1270,
+    "height": 470
+  },
+  "status": "illustrative method schematic; no experimental results",
+  "modules": [
+    {
+      "id": "contract",
+      "action": "Define the claim",
+      "input": "Entities \u00b7 states \u00b7 evidence",
+      "output": "see edge payloads",
+      "visual": "original editable geometry"
+    },
+    {
+      "id": "modules",
+      "action": "Build visual modules",
+      "input": "One action per module",
+      "output": "see edge payloads",
+      "visual": "original editable geometry"
+    },
+    {
+      "id": "compose",
+      "action": "Compose & verify",
+      "input": "Editable labels \u00b7 audited ports",
+      "output": "see edge payloads",
+      "visual": "original editable geometry"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "from": "#e0-out",
+      "to": "#e0-in",
+      "payload": "semantic contract",
+      "kind": "data"
+    },
+    {
+      "id": "e1",
+      "from": "#e1-out",
+      "to": "#e1-in",
+      "payload": "reviewed modules",
+      "kind": "data"
+    }
+  ],
+  "assets": [
+    {
+      "source": "original SVG geometry",
+      "status": "illustrative"
+    }
+  ]
+}

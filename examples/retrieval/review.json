@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "issues": [],
+  "checkedEdges": [
+    {
+      "id": "e0",
+      "fromError": 0,
+      "toError": 0
+    },
+    {
+      "id": "e1",
+      "fromError": 0,
+      "toError": 0
+    },
+    {
+      "id": "e2",
+      "fromError": 0,
+      "toError": 0
+    },
+    {
+      "id": "e3",
+      "fromError": 0,
+      "toError": 0
+    }
+  ],
+  "modules": [
+    "query",
+    "retrieve",
+    "generate",
+    "answer"
+  ],
+  "coverage": "Only paths with data-edge are audited. Raster content, method semantics, and visual quality require inspection."
+}

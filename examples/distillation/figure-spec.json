@@ -1,0 +1,81 @@
+{
+  "claim": "A fixed teacher supplies soft targets; only the student is updated.",
+  "canvas": {
+    "width": 1250,
+    "height": 630
+  },
+  "status": "illustrative method schematic; no experimental results",
+  "modules": [
+    {
+      "id": "input",
+      "action": "Shared input",
+      "input": "Same sample x",
+      "output": "see edge payloads",
+      "visual": "original editable geometry"
+    },
+    {
+      "id": "teacher",
+      "action": "Frozen teacher",
+      "input": "Soft target distribution",
+      "output": "see edge payloads",
+      "visual": "original editable geometry"
+    },
+    {
+      "id": "student",
+      "action": "Trainable student",
+      "input": "Predicted distribution",
+      "output": "see edge payloads",
+      "visual": "original editable geometry"
+    },
+    {
+      "id": "loss",
+      "action": "Distillation loss",
+      "input": "D_KL ( p_T || p_S )",
+      "output": "see edge payloads",
+      "visual": "original editable geometry"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "from": "#e0-out",
+      "to": "#e0-in",
+      "payload": "sample x",
+      "kind": "data"
+    },
+    {
+      "id": "e1",
+      "from": "#e1-out",
+      "to": "#e1-in",
+      "payload": "sample x",
+      "kind": "data"
+    },
+    {
+      "id": "e2",
+      "from": "#e2-out",
+      "to": "#e2-in",
+      "payload": "soft targets",
+      "kind": "data"
+    },
+    {
+      "id": "e3",
+      "from": "#e3-out",
+      "to": "#e3-in",
+      "payload": "predictions",
+      "kind": "data"
+    },
+    {
+      "id": "e4",
+      "from": "#e4-out",
+      "to": "#e4-in",
+      "payload": "student update",
+      "kind": "control"
+    }
+  ],
+  "assets": [
+    {
+      "source": "original SVG geometry",
+      "status": "illustrative"
+    }
+  ]
+}

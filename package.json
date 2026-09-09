@@ -1,0 +1,7 @@
+{
+  "name": "modular-figure-design",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Optional HTML/SVG rendering dependencies for the modular figure design skill",
+  "devDependencies": { "playwright": "1.58.2" }
+}
